@@ -8,8 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/my-project-common/my-project-entity/my-project-entity.iml" filepath="$PROJECT_DIR$/my-project-common/my-project-entity/my-project-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-eureka-server/my-project-eureka-server.iml" filepath="$PROJECT_DIR$/my-project-eureka-server/my-project-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-common/my-project-mapper/my-project-mapper.iml" filepath="$PROJECT_DIR$/my-project-common/my-project-mapper/my-project-mapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/my-project-regist-service/my-project-regist-service.iml" filepath="$PROJECT_DIR$/my-project-regist-service/my-project-regist-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-project-service/my-project-regist-service/my-project-regist-service.iml" filepath="$PROJECT_DIR$/my-project-service/my-project-regist-service/my-project-regist-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-regist-web/my-project-regist-web.iml" filepath="$PROJECT_DIR$/my-project-regist-web/my-project-regist-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-project-service/my-project-service.iml" filepath="$PROJECT_DIR$/my-project-service/my-project-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/my-project-v1.iml" filepath="$PROJECT_DIR$/.idea/my-project-v1.iml" />
     </modules>
   </component>

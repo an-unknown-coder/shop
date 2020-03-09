@@ -4,7 +4,7 @@
     <file url="file://$PROJECT_DIR$/my-project-common/my-project-mapper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-project-dependencies" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-project-eureka-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/my-project-regist-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-project-regist-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-project-service/my-project-regist-service" charset="UTF-8" />
   </component>
 </project>

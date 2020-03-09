@@ -9,6 +9,7 @@
         <module name="my-project-mapper" />
         <module name="my-project-eureka-server" />
         <module name="my-project-basic" />
+        <module name="my-project-service" />
         <module name="my-project-regist-service" />
         <module name="my-project-regist-web" />
         <module name="my-project-entity" />
@@ -24,6 +25,7 @@
       <module name="my-project-mapper" target="1.8" />
       <module name="my-project-regist-service" target="1.8" />
       <module name="my-project-regist-web" target="1.8" />
+      <module name="my-project-service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
