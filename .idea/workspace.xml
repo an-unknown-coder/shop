@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a411a007-659b-4a9b-9d51-b89ed24e8f35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-project-service/my-project-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-project-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/MyProjectRegistServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/MyProjectRegistServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/controller/RegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/controller/RegistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/service/IRegistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/service/IRegistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/service/impl/RegistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/main/java/com/qf/my/project/regist/service/service/impl/RegistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-regist-service/src/test/java/com/qf/my/project/regist/service/MyProjectRegistServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-regist-service/src/test/java/com/qf/my/project/regist/service/MyProjectRegistServiceApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="a411a007-659b-4a9b-9d51-b89ed24e8f35" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/my-project-common/my-project-basic/target/" />
     <ignored path="$PROJECT_DIR$/my-project-common/target/" />
     <ignored path="$PROJECT_DIR$/my-project-common/my-project-mapper/target/" />
@@ -118,7 +97,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-project-regist-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -254,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583745993223</updated>
-      <workItem from="1583745995527" duration="8987000" />
+      <workItem from="1583745995527" duration="10364000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0">
       <created>1583748494705</created>
@@ -263,11 +246,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583748494705</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.0.5">
+      <created>1583756801425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583756801425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8987000" />
+    <option name="totallyTimeSpent" value="10364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="5" width="1386" height="728" extended-state="0" />
@@ -283,7 +273,7 @@
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24915825" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26430976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,7 +303,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.0" />
+    <MESSAGE value="v1.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/my-project-eureka-server/pom.xml">
@@ -458,7 +449,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-project-regist-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
