@@ -25,7 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/my-project-web/register-web/register-web.iml" filepath="$PROJECT_DIR$/my-project-web/register-web/register-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-service/search-service/search-service.iml" filepath="$PROJECT_DIR$/my-project-service/search-service/search-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-web/search-web/search-web.iml" filepath="$PROJECT_DIR$/my-project-web/search-web/search-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/shop-github.iml" filepath="$PROJECT_DIR$/.idea/shop-github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shop-springcloud.iml" filepath="$PROJECT_DIR$/.idea/shop-springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-service/static-resource-service/static-resource-service.iml" filepath="$PROJECT_DIR$/my-project-service/static-resource-service/static-resource-service.iml" />
     </modules>
   </component>

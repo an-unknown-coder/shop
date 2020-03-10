@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TypeMapper">
+    <resultMap id="resultOfSort" type="com.qf.entity.Pro1">
+        <id property="id" column="id1" javaType="java.lang.Long"/>
+        <result property="name" column="pro1" javaType="java.lang.String"/>
+        <collection property="pro2List" ofType="com.qf.entity.Pro2">
+            <id property="id" column="id2" javaType="java.lang.Long"/>
+            <result property="name" column="pro2" javaType="java.lang.String"/>
+            <collection property="pro3List" ofType="com.qf.entity.Pro3">
+                <id property="id" column="id3" javaType="java.lang.Long"/>
+                <result property="name" column="pro3" javaType="java.lang.String"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="queryAllSort" resultMap="resultOfSort">
+            SELECT
+      a.cid   AS id1,
+      a.cname AS pro1,
+      b.cid   AS id2,
+      b.cname AS pro2,
+      c.cid   AS id3,
+      c.cname AS pro3
+    FROM t_product_type a,
+      t_product_type b,
+      t_product_type c
+    WHERE a.cid = b.pid
+        AND b.cid = c.pid
+        AND a.pid = '0'
+    ORDER BY a.cid;
+    </select>
+</mapper>
