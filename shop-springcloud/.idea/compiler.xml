@@ -14,20 +14,19 @@
         <module name="login-web" />
         <module name="my-project-service" />
         <module name="my-project-web" />
+        <module name="my-project-dependencies" />
         <module name="product-service" />
-        <module name="my-project-eureka-server" />
         <module name="cache-service" />
-        <module name="register-web" />
+        <module name="my-project-eureka-server" />
         <module name="cart-web" />
         <module name="my-project-entity" />
-        <module name="login-service" />
-        <module name="register-service" />
+        <module name="my-project-regist-web" />
         <module name="email-service" />
         <module name="my-project-mapper" />
         <module name="msg-service" />
         <module name="cart-service" />
         <module name="search-service" />
-        <module name="my-project-dependencies" />
+        <module name="my-project-regist-service" />
         <module name="my-project-basic" />
       </profile>
     </annotationProcessing>
@@ -38,7 +37,6 @@
       <module name="email-service" target="1.8" />
       <module name="index-service" target="1.8" />
       <module name="index-web" target="1.8" />
-      <module name="login-service" target="1.8" />
       <module name="login-web" target="1.8" />
       <module name="msg-service" target="1.8" />
       <module name="my-project-basic" target="1.5" />
@@ -47,12 +45,12 @@
       <module name="my-project-entity" target="1.5" />
       <module name="my-project-eureka-server" target="1.8" />
       <module name="my-project-mapper" target="1.8" />
+      <module name="my-project-regist-service" target="1.8" />
+      <module name="my-project-regist-web" target="1.8" />
       <module name="my-project-service" target="1.5" />
       <module name="my-project-web" target="1.5" />
       <module name="product-service" target="1.8" />
       <module name="product-web" target="1.8" />
-      <module name="register-service" target="1.8" />
-      <module name="register-web" target="1.8" />
       <module name="search-service" target="1.8" />
       <module name="search-web" target="1.8" />
       <module name="static-resource-service" target="1.8" />
@@ -66,16 +64,15 @@
       <module name="email-service" options="-parameters" />
       <module name="index-service" options="-parameters" />
       <module name="index-web" options="-parameters" />
-      <module name="login-service" options="-parameters" />
       <module name="login-web" options="-parameters" />
       <module name="msg-service" options="-parameters" />
       <module name="my-project-dependencies" options="-parameters" />
       <module name="my-project-eureka-server" options="-parameters" />
       <module name="my-project-mapper" options="-parameters" />
+      <module name="my-project-regist-service" options="-parameters" />
+      <module name="my-project-regist-web" options="-parameters" />
       <module name="product-service" options="-parameters" />
       <module name="product-web" options="-parameters" />
-      <module name="register-service" options="-parameters" />
-      <module name="register-web" options="-parameters" />
       <module name="search-service" options="-parameters" />
       <module name="search-web" options="-parameters" />
       <module name="static-resource-service" options="-parameters" />
