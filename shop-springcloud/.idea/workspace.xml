@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3595c88-b454-4aab-9e3f-edf637dcbd3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-project-web/product-web/src/main/java/com/qf/controller/test.java" afterDir="false" />
+    <list default="true" id="4ae48411-eb67-41a8-b20d-bcb38a91323d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-project-common/my-project-common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-basic/my-project-basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-basic/my-project-basic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/my-project-entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-entity/my-project-entity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-mapper/my-project-mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-mapper/my-project-mapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-dependencies/my-project-dependencies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-dependencies/my-project-dependencies.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-service/my-project-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/my-project-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-web/my-project-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/my-project-web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YxqAJvbW0mL7VceFLC1gZuPjAu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -58,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-project-service/login-service/pom.xml" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager" selected="Spring Boot.IndexWebApplication">
@@ -132,7 +128,7 @@
       </method>
     </configuration>
     <configuration name="MyProjectRegistServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="my-project-regist-service" />
+      <module name="register-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.MyProjectRegistServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,6 +137,13 @@
     <configuration name="MyProjectRegistWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my-project-regist-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.MyProjectRegistWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyProjectUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="login-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.MyProjectUserServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,10 +213,22 @@
       <updated>1583894447479</updated>
       <workItem from="1583894450733" duration="3400000" />
     </task>
+    <task id="LOCAL-00001" summary="hehehehehe">
+      <created>1583911719231</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583911719231</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hehehehehe" />
+    <option name="LAST_COMMIT_MESSAGE" value="hehehehehe" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1583908728237">
@@ -224,6 +239,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1583896334553" />
+    <state x="326" y="11" key="CommitChangelistDialog2" timestamp="1583911718418">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="326" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1583911718418" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1583911585967">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1583911585967" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583896613986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/my-project-service/register-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/search-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/static-resource-service/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-service/login-service/pom.xml" />
       </list>
     </option>
   </component>
