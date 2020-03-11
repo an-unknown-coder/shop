@@ -10,3 +10,4 @@ redis
 eureka-server: 8761
 register-service: 8762   	register-web: 7762
 index-service: 8763    		index-web:7763
+cache-service: 8765

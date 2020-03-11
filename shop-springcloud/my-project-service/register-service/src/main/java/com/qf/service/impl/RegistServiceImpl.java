@@ -7,10 +7,12 @@ import com.qf.service.IRegistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service
 public class RegistServiceImpl implements IRegistService {
 
-    @Autowired
+    @Resource
     TUserMapper mapper;
 
     @Override
