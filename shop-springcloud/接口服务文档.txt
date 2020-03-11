@@ -1,0 +1,12 @@
+mysql
+	139.129.97.123     3306    root   root
+redis
+	139.129.97.123      6379     p@ssw0rd    (倒数第三个是数字0)
+
+
+
+各模块工程端口号（自己模块的端口定义好后写到这里）
+    
+eureka-server: 8761
+register-service: 8762   	register-web: 7762
+index-service: 8763    		index-web:7763
