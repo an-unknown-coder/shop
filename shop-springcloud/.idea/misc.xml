@@ -3,36 +3,4 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/my-project-common/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-dependencies/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-regist-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-regist-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/my-project-regist-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/my-project-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/login-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/register-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/login-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/register-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/cache-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/cart-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/email-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/index-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/product-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/search-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/msg-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/static-resource-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/cart-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/index-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/product-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/search-web/pom.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
