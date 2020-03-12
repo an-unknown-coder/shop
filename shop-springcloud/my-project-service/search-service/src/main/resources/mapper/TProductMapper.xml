@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TProductMapper">
+    <resultMap id="BaseResultMap" type="com.qf.entity.TProduct">
+        <id column="pid" jdbcType="BIGINT" property="pid"/>
+        <result column="pname" property="pname" jdbcType="VARCHAR"/>
+        <result column="price" property="price" jdbcType="DECIMAL"/>
+        <result column="pimage" property="pimage" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select pid,pname,price,pimage from t_product
+    </select>
+</mapper>
