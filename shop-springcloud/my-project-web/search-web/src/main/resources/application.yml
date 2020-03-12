@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: search-web
+server:
+  port: 7767
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
