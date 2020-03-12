@@ -52,13 +52,6 @@
                 <version>${mysql.version}</version>
             </dependency>
 
-
-            <dependency>
-                <groupId>com.qf</groupId>
-                <artifactId>my-project-entity</artifactId>
-                <version>${parent.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -75,5 +68,6 @@
         </dependencies>
     </dependencyManagement>
 
+    <packaging>pom</packaging>
 
 </project>

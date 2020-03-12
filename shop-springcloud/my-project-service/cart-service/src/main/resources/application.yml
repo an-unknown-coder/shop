@@ -1,0 +1,21 @@
+
+
+spring:
+  application:
+    name: cart-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc://mysql:139.129.97.123:3306/qf-v6?useUnicode=true&amp;characterEncoding=UTF-8
+    type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+
+
