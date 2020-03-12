@@ -1,5 +1,7 @@
 package com.qf.constant;
 
-public class RedisConstant {
-    public static final String REGISTER_EMAIL = "register:email:";
+public interface RedisConstant {
+
+    String USER_CART_PRE="user:cart";
+
 }
