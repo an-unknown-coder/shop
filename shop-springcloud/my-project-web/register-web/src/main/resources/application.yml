@@ -1,9 +1,9 @@
 spring:
   application:
-    name: regist-web
+    name: register-web
 
 server:
-  port: 8763
+  port: 7762
 
 eureka:
   client:

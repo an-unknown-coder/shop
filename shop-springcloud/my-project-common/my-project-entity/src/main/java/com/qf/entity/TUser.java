@@ -1,35 +1,24 @@
 package com.qf.entity;
 
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.Date;
 
+@Data
+@Table(name = "t_user")
+@Entity
 public class TUser implements Serializable {
+    @Id
     private Long uid;
-
-    private String uname;
-
+    private String username;
     private String password;
-
-    public Long getUid() {
-        return uid;
-    }
-
-    public void setUid(Long uid) {
-        this.uid = uid;
-    }
-
-    public String getUname() {
-        return uname;
-    }
-
-    public void setUname(String uname) {
-        this.uname = uname == null ? null : uname.trim();
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
+    private String phone;
+    private String email;
+    private Integer flag;
+    private Date create_time;
+    private Date update_time;
 }

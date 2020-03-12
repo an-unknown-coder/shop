@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: email-service
+  mail:
+    host: smtp.qq.com
+    username: 1525426775@qq.com
+    password: mkjvaarwvyhmjbgc
+    default-encoding: utf-8
+
+server:
+  port: 8766
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+activateUrl: http://localhost:8762/user/activate/

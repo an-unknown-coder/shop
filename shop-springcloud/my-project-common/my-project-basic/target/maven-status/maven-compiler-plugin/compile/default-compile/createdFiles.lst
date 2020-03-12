@@ -1,3 +1,5 @@
+com\qf\dto\TProductCartDTO.class
+com\qf\vo\CartItem.class
 com\qf\constant\RedisConstant.class
 com\qf\dto\ResultBean.class
 com\qf\util\RedisUtil.class

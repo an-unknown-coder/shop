@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84ff5948-db56-4885-992c-7e195187aeba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c893ffea-7b25-494b-87f6-ff3400f0ff2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-project-service/email-service/src/main/java/com/qf/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-project-service/email-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-project-service/email-service/src/main/resources/templates/emailTemplate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/config/RibbonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-basic/src/main/java/com/qf/constant/RedisConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-basic/src/main/java/com/qf/constant/RedisConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-basic/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-basic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-basic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-basic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-basic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-common/my-project-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-common/my-project-mapper/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/cache-service/src/main/java/com/qf/CacheServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/cache-service/src/main/java/com/qf/CacheServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/cache-service/src/main/java/com/qf/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/cache-service/src/main/java/com/qf/controller/RedisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/email-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/email-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/email-service/src/main/java/com/qf/EmailServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/email-service/src/main/java/com/qf/EmailServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/email-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/register-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/MyProjectRegistServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/RegisterServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/controller/RegistController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/service/IRegistService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/main/java/com/qf/service/impl/RegistServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/register-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-service/register-service/src/test/java/com/qf/MyProjectRegistServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-service/register-service/src/test/java/com/qf/RegisterServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/index-web/src/main/java/com/qf/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/index-web/src/main/java/com/qf/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/register-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/register-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/register-web/src/main/java/com/qf/MyProjectRegistWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/register-web/src/main/java/com/qf/RegisterWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/register-web/src/main/java/com/qf/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/register-web/src/main/java/com/qf/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/register-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/register-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/register-web/src/test/java/com/qf/MyProjectRegistWebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/register-web/src/test/java/com/qf/RegisterWebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接口服务文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/接口服务文档.txt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/my-project-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-common/my-project-mapper/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/email-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-common/my-project-basic/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/msg-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/search-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/cart-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-eureka-server/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-common/my-project-entity/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/index-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-dependencies/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/register-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/cache-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/product-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/cart-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/register-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/login-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/product-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-web/index-web/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/static-resource-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-service/search-service/target/" />
-    <ignored path="$PROJECT_DIR$/my-project-common/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,132 +49,9 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/service/impl/SearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/SearchWebApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/mapper/TProductMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/service/ISearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/src/main/java/controller/CartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2068" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1326" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/1111" />
-        <option value="$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java" />
-        <option value="$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/SearchWebApplication.java" />
-        <option value="$PROJECT_DIR$/接口服务文档.txt" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -170,212 +60,14 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="29" />
     <option name="y" value="7" />
     <option name="width" value="1312" />
     <option name="height" value="766" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
-              <item name="search-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
-              <item name="search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -389,18 +81,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SearchWebApplication">
     <configuration name="CacheServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -494,6 +174,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="register-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.RegisterServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="register-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.RegisterWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="search-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.SearchServiceApplication" />
@@ -515,6 +209,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -576,9 +282,6 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5787000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -588,45 +291,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="29" y="7" width="1312" height="766" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915966" visible="true" weight="0.28674123" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.50084037" side_tool="true" weight="0.051321927" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840257" weight="0.07594936" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49848714" weight="0.1676923" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.32872504" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159746" side_tool="true" visible="true" weight="0.20253165" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49924356" weight="0.32872504" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Spring" order="15" weight="0.3276923" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -635,252 +299,5 @@
     <MESSAGE value="搜索接口已经完成。" />
     <MESSAGE value="搜索接口已经完成2。" />
     <option name="LAST_COMMIT_MESSAGE" value="搜索接口已经完成2。" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1111" />
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/src/main/java/com/qf/controller/TestGit001.java" />
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/src/main/java/com/qf/mapper/TypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/src/main/java/com/qf/cartservice/CartServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/my-project-web.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/src/main/java/com/qf/IndexServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/index-service/src/main/java/com/qf/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/resources/mapper/TProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-eureka-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-eureka-server/src/main/java/com/qf/MyProjectEurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/service/IProductSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/接口服务文档.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/src/main/java/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2068" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/cart-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/mapper/TProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/service/impl/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/service/ISearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/SearchWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+</head>
+<body>
+
+亲爱的<span th:text="${username}"></span>,您好!您已初步注册，请在一个小时内点击<a th:href='${url}' th:text="${url}"></a>完成账号激活，即可正常登录，享受我们公司的服务。
+<br>
+感谢您的关注！
+
+</body>
+</html>

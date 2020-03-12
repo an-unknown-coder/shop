@@ -1,6 +1,8 @@
 package com.qf.controller;
 
+import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
+import com.qf.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,6 +31,6 @@ public class RedisController {
 
     @GetMapping("get/{key}")
     public String get(@PathVariable String key){
-        return key==null?null:redisTemplate.opsForValue().get(key);
+         return key==null?null:redisTemplate.opsForValue().get(RedisUtil.getRedisKey(RedisConstant.REGISTER_EMAIL,key));
     }
 }

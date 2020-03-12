@@ -19,16 +19,17 @@
         <option value="$PROJECT_DIR$/my-project-service/index-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/msg-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/product-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-service/register-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/search-service/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-service/static-resource-service/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-web/cart-web/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-web/index-web/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-web/login-web/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-web/product-web/pom.xml" />
-        <option value="$PROJECT_DIR$/my-project-web/register-web/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-web/search-web/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-service/login-service/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-service/register-service/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-web/register-web/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-web/pom.xml" />
       </list>
     </option>
   </component>

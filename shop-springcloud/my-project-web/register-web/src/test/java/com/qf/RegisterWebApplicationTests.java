@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.stream.IntStream;
 
 @SpringBootTest
-class MyProjectRegistWebApplicationTests {
+class RegisterWebApplicationTests {
 
     static int arr[] = new int[10];
 

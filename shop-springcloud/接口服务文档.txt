@@ -12,4 +12,5 @@ register-service: 8762   	register-web: 7762
 index-service: 8763    		index-web:7763
 cart-service : 8764         cart-web: 7764
 cache-service: 8765
+email-service: 8766
 search-service: 8767        search-web: 7767
