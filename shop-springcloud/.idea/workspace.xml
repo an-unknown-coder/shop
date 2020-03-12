@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84ff5948-db56-4885-992c-7e195187aeba" name="Default Changelist" comment="搜索接口已经完成。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="84ff5948-db56-4885-992c-7e195187aeba" name="Default Changelist" comment="搜索接口已经完成2。" />
     <ignored path="$PROJECT_DIR$/my-project-service/target/" />
     <ignored path="$PROJECT_DIR$/my-project-common/my-project-mapper/target/" />
     <ignored path="$PROJECT_DIR$/my-project-service/email-service/target/" />
@@ -77,7 +75,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -185,11 +187,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="2" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="29" />
+    <option name="y" value="7" />
+    <option name="width" value="1312" />
+    <option name="height" value="766" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -342,6 +344,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -488,7 +494,7 @@
       <updated>1583919388441</updated>
       <workItem from="1583919392137" duration="238000" />
       <workItem from="1584016171239" duration="571000" />
-      <workItem from="1584016762815" duration="4385000" />
+      <workItem from="1584016762815" duration="4844000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.1">
       <created>1584016494797</created>
@@ -518,11 +524,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584020919499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搜索接口已经完成。">
+      <created>1584021218715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584021218716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5044000" />
+    <option name="totallyTimeSpent" value="5503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,10 +547,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="29" y="7" width="1312" height="766" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915966" visible="true" weight="0.27155825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915966" visible="true" weight="0.28674123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -547,7 +559,7 @@
       <window_info id="Web" order="7" sideWeight="0.50084037" side_tool="true" weight="0.051321927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27384615" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840257" weight="0.07594936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -555,7 +567,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.32872504" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.1676923" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159746" side_tool="true" visible="true" weight="0.07436709" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49924356" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -836,7 +848,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
