@@ -9,6 +9,13 @@ public class TProductCartDTO implements Serializable {
 
     private TProduct product;
 
+    public TProductCartDTO() {
+    }
+
+    public TProductCartDTO(TProduct product) {
+        this.product = product;
+    }
+
     private int count;
 
     private Date updateTime;
