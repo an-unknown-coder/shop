@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84ff5948-db56-4885-992c-7e195187aeba" name="Default Changelist" comment="">
+    <list default="true" id="84ff5948-db56-4885-992c-7e195187aeba" name="Default Changelist" comment="搜索接口已经完成。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-service/search-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/接口服务文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/接口服务文档.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/my-project-service/target/" />
     <ignored path="$PROJECT_DIR$/my-project-common/my-project-mapper/target/" />
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="208">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#245#246#0" expanded="true" />
@@ -68,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/SearchWebApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
@@ -78,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -87,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/service/IProductSearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TProduct.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#489#490#0" expanded="true" />
@@ -135,13 +132,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/接口服务文档.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="290">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-project-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -150,20 +152,6 @@
             <state split_layout="SPLIT">
               <first_editor />
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -216,6 +204,135 @@
             <path>
               <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-service" type="462c0819:PsiDirectoryNode" />
+              <item name="search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qf" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="my-project-web" type="462c0819:PsiDirectoryNode" />
+              <item name="search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -371,7 +488,7 @@
       <updated>1583919388441</updated>
       <workItem from="1583919392137" duration="238000" />
       <workItem from="1584016171239" duration="571000" />
-      <workItem from="1584016762815" duration="3824000" />
+      <workItem from="1584016762815" duration="4385000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.1">
       <created>1584016494797</created>
@@ -394,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584020281937</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="搜索接口已经完成。">
+      <created>1584020919499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584020919499</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4483000" />
+    <option name="totallyTimeSpent" value="5044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,6 +535,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915966" visible="true" weight="0.27155825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -422,7 +547,7 @@
       <window_info id="Web" order="7" sideWeight="0.50084037" side_tool="true" weight="0.051321927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41230768" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27384615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,32 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/SearchWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
@@ -652,17 +755,7 @@
     <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/service/IProductSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -672,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/my-project-common/my-project-entity/src/main/java/com/qf/entity/TProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
@@ -705,10 +798,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/接口服务文档.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="290">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-project-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/java/com/qf/SearchServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-project-service/search-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/java/com/qf/controller/ProductSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-project-web/search-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
