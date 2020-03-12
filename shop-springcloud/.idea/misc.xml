@@ -7,6 +7,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/my-project-common/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-common/my-project-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/my-project-common/my-project-entity/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-common/my-project-mapper/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/my-project-eureka-server/pom.xml" />
