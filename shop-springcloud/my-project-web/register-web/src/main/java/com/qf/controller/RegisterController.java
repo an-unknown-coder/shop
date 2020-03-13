@@ -4,9 +4,7 @@ import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
@@ -18,8 +16,9 @@ public class RegisterController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("email/{addr}/{password}")
-    public ResultBean registerByEmail(@PathVariable String addr, @PathVariable String password) {
+    @PostMapping("email")
+    public ResultBean registerByEmail(String addr,String password) {
+        System.out.println("addr-->"+addr+",password-->"+password);
         String uuid = UUID.randomUUID().toString();
         String url = String.format("http://email-service/email/send/%s/%s", addr, uuid);
         ResultBean resultBean = restTemplate.getForObject(url, ResultBean.class);
