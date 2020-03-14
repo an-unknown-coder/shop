@@ -1,20 +1,17 @@
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-  type-aliases-package: com.qf.entity
-  mapper-locations: classpath:mapper/*.xml
 spring:
+  application:
+    name: login-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://139.129.97.123:3306/qf-v6?useUnicode=true&amp;characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
-  application:
-    name: index-service
+
+server:
+  port: 8768
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-server:
-  port: 8763
