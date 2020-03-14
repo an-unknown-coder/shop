@@ -21,6 +21,6 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:
-    //驼峰映射
+    # 驼峰映射
     use-actual-param-name: true
   type-aliases-package: com.qf.entity
