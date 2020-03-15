@@ -1,13 +1,18 @@
 package com.qf.controller;
 
+import com.google.gson.Gson;
+import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TUser;
+import com.qf.entity.UserLoginInfo;
 import com.qf.mapper.UserMapper;
+import com.qf.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -17,6 +22,9 @@ public class LoginService {
 
     @Resource
     private UserMapper userMapper;
+
+    @Resource
+    private RestTemplate restTemplate;
 
     @RequestMapping("login/{username}/{password}")
     public ResultBean login(@PathVariable String username,@PathVariable String password){
@@ -35,5 +43,24 @@ public class LoginService {
         }else {
             return ResultBean.error("用户名或密码错误!");
         }
+    }
+
+    @RequestMapping("checkLogin/{uuid}")
+    public UserLoginInfo checkLogin(@PathVariable String uuid){
+        UserLoginInfo loginInfo = new UserLoginInfo();
+        if (uuid == null) {
+            loginInfo.setIsLogin(false);
+        } else {
+            String redisKey = RedisUtil.getRedisKey(RedisConstant.USER_LOGIN_PRE, uuid);
+            String userJson = restTemplate.getForObject("http://cache-service/redis/get/" + redisKey, String.class);
+            TUser tUser = new Gson().fromJson(userJson, TUser.class);
+            if (tUser == null) {
+                loginInfo.setIsLogin(false);
+            } else {
+                loginInfo.setIsLogin(true);
+                loginInfo.setUser(tUser);
+            }
+        }
+        return loginInfo;
     }
 }

@@ -10,9 +10,7 @@
 
     <link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css"/>
     <link href="AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css"/>
-
     <link href="basic/css/demo.css" rel="stylesheet" type="text/css"/>
-
     <link href="css/hmstyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/skin.css" rel="stylesheet" type="text/css"/>
     <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
@@ -25,10 +23,10 @@
         <ul class="message-l">
             <div class="topMessage">
                 <div class="menu-hd" id="welcome">
-                    <a href="http://localhost:7768/toLogin" class="h" th:unless="${isLogin}">亲，请登录 </a>
-                    <a href="http://localhost:7762/toRegister" th:unless="${isLogin}">免费注册</a>
-                    <span class="h" th:if="${isLogin}">欢迎您 ！亲爱的</span>
-                    <span th:if="${isLogin}" th:text="${userInfo.getUsername()}"></span>
+                    <a href="http://localhost:7768/toLogin" class="h" th:unless="${loginInfo.isLogin}">亲，请登录 </a>
+                    <a href="http://localhost:7762/toRegister" th:unless="${loginInfo.isLogin}">免费注册</a>
+                    <span class="h" th:if="${loginInfo.isLogin}">欢迎您 ！亲爱的</span>
+                    <span th:if="${loginInfo.isLogin}" th:text="${loginInfo.user.username}"></span>
                 </div>
             </div>
         </ul>
