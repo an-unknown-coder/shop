@@ -31,6 +31,6 @@ public class RedisController {
 
     @GetMapping("get/{key}")
     public String get(@PathVariable String key){
-         return key==null?null:redisTemplate.opsForValue().get(RedisUtil.getRedisKey(RedisConstant.REGISTER_EMAIL,key));
+         return key==null?null:redisTemplate.opsForValue().get(key);
     }
 }
