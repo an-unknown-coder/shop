@@ -40,6 +40,7 @@ public class CartController {
             restTemplate.getForObject(String.format("http://cart-service/cart/getCart/%s/%s/%s",userUid.toString(),productId,count),ResultBean.class);
 
         }
+        //
         //----未登录状态下的购物车-----------
 
         //把商品添加到购物车  这个购物车是在redis 中

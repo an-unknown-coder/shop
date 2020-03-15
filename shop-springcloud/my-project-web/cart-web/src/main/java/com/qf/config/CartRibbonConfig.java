@@ -8,6 +8,9 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class CartRibbonConfig {
 
+
+
+
     @LoadBalanced
     @Bean
     public RestTemplate getRestTemplate(){
