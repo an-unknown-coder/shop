@@ -28,9 +28,7 @@ public class LoginController {
             String uuid = UUID.randomUUID().toString();
             Cookie cookie = new Cookie(RedisConstant.USER_LOGIN_UUID, uuid);
             response.addCookie(cookie);
-            TUser user = new TUser();
-            user.setUsername(username);
-            user.setPassword(password);
+            TUser user = (TUser) resultBean.getData();
             String value = new Gson().toJson(user);
             String key = RedisUtil.getRedisKey(RedisConstant.USER_LOGIN_PRE, uuid);
             long time = 40000L;

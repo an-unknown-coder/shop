@@ -38,7 +38,9 @@ public class LoginService {
             if (tUser.getFlag()==0){
                 return ResultBean.error("您已注册，但还未激活!");
             }else{
-                return ResultBean.success("Successfully login!");
+                ResultBean success = ResultBean.success("Successfully login!");
+                success.setData(tUser);
+                return success;
             }
         }else {
             return ResultBean.error("用户名或密码错误!");
