@@ -1,4 +1,4 @@
-package com.qf.cartservice.mapper;
+package com.qf.mapper;
 
 import com.qf.entity.TProduct;
 import org.apache.ibatis.annotations.Param;

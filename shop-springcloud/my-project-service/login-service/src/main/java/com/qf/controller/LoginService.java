@@ -39,6 +39,7 @@ public class LoginService {
                 return ResultBean.error("您已注册，但还未激活!");
             }else{
                 ResultBean success = ResultBean.success("Successfully login!");
+                System.out.println(tUser);
                 success.setData(tUser);
                 return success;
             }

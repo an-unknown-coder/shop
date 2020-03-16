@@ -1,4 +1,4 @@
-package com.qf.cartservice;
+package com.qf;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

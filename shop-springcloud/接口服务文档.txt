@@ -4,6 +4,8 @@ redis
 	139.129.97.123      6379     p@ssw0rd    (倒数第三个是数字0)
 
 
+email:wangqi.gang@foxmail.com
+password:wq301415926
 
 各模块工程端口号（自己模块的端口定义好后写到这里）
     

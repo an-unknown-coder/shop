@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qf.cartservice.mapper.TProductMapper">
+<mapper namespace="com.qf.mapper.TProductMapper">
     <resultMap id="ResultSelectAlltMap" type="com.qf.entity.TProduct">
         <id column="pid" jdbcType="BIGINT" property="pid" />
         <result column="pname" jdbcType="VARCHAR" property="pname" />

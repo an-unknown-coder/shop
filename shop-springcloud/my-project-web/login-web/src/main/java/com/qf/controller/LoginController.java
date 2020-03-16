@@ -31,7 +31,6 @@ public class LoginController {
             response.addCookie(cookie);
             ObjectMapper mapper = new ObjectMapper();
             TUser user = mapper.convertValue(resultBean.getData(), TUser.class);
-//            TUser user = (TUser) resultBean.getData();
             String value = new Gson().toJson(user);
             String key = RedisUtil.getRedisKey(RedisConstant.USER_LOGIN_PRE, uuid);
             long time = 40000L;
