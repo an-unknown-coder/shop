@@ -17,4 +17,9 @@ public class SearchController {
     public List<TProduct> searchProduct(String keywords) {
         return searchService.searchProduct(keywords);
     }
+    @RequestMapping("initdata")
+    public String initDataToSolr() {
+        searchService.initDataToSolr();
+        return "数据加载进solr库完成!";
+    }
 }
