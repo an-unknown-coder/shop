@@ -153,7 +153,7 @@ public class CartController {
                     TProduct product = (TProduct) redisTemplate.opsForValue().get(productKey);
                     if (product == null) {
                         // 去数据库拿 然后存redis
-                        product = (TProduct) tProductMapper.selectByPrimarykey(cart.getProductId());
+                        product = tProductMapper.selectByPrimaryKey(cart.getProductId());
                         redisTemplate.opsForValue().set(productKey, product);
                     }
                     // 有商品
