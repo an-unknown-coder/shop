@@ -18,7 +18,6 @@ public class RegisterController {
 
     @PostMapping("email")
     public ResultBean registerByEmail(String addr,String password) {
-        System.out.println("addr-->"+addr+",password-->"+password);
         String uuid = UUID.randomUUID().toString();
         String url = String.format("http://email-service/email/send/%s/%s", addr, uuid);
         ResultBean resultBean = restTemplate.getForObject(url, ResultBean.class);

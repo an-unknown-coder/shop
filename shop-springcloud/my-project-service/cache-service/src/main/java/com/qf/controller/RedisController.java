@@ -1,5 +1,6 @@
 package com.qf.controller;
 
+
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.util.RedisUtil;
@@ -31,6 +32,6 @@ public class RedisController {
 
     @GetMapping("get/{key}")
     public String get(@PathVariable String key){
-         return key==null?null:redisTemplate.opsForValue().get(RedisUtil.getRedisKey(RedisConstant.REGISTER_EMAIL,key));
+         return key==null?null:redisTemplate.opsForValue().get(key);
     }
 }

@@ -21,5 +21,4 @@ public class IndexController {
         List<Pro1> result = restTemplate.getForObject("http://index-service/index/sort", List.class);
         return result;
     }
-
 }
