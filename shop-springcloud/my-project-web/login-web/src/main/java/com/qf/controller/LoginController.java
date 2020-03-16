@@ -1,5 +1,6 @@
 package com.qf.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
@@ -28,7 +29,9 @@ public class LoginController {
             String uuid = UUID.randomUUID().toString();
             Cookie cookie = new Cookie(RedisConstant.USER_LOGIN_UUID, uuid);
             response.addCookie(cookie);
-            TUser user = (TUser) resultBean.getData();
+            ObjectMapper mapper = new ObjectMapper();
+            TUser user = mapper.convertValue(resultBean.getData(), TUser.class);
+//            TUser user = (TUser) resultBean.getData();
             String value = new Gson().toJson(user);
             String key = RedisUtil.getRedisKey(RedisConstant.USER_LOGIN_PRE, uuid);
             long time = 40000L;
