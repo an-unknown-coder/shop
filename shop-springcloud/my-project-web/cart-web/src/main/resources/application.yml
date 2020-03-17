@@ -9,3 +9,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+ribbon:
+  eager-load:
+    clients: cart-service,login-service
+    enabled: true

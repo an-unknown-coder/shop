@@ -5,10 +5,7 @@ import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.entity.UserLoginInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.Cookie;
@@ -25,6 +22,7 @@ public class CartController {
     /**
      *添加商品
      */
+    @CrossOrigin
     @RequestMapping("add/{productId}/{count}")
     public ResultBean addCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
                                @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
@@ -42,13 +40,19 @@ public class CartController {
             }
         }
         //未登录
+        Cookie cookie = null;
         if (cart_uuid == null || "".equals(cart_uuid)) {
             cart_uuid = UUID.randomUUID().toString();
-            Cookie cookie = new Cookie(CookieConstant.USER_CART_UUID, cart_uuid);
+            cookie = new Cookie(CookieConstant.USER_CART_UUID, cart_uuid);
             cookie.setPath("/");
             response.addCookie(cookie);
         }
-        return restTemplate.getForObject("http://cart-service/cart/getCart/" + cart_uuid + "/" + productId + "/" + count, ResultBean.class);
+        ResultBean resultBean = restTemplate.getForObject("http://cart-service/cart/getCart/" + cart_uuid + "/" + productId + "/" + count, ResultBean.class);
+        if (cookie!=null){
+            assert resultBean != null;
+            resultBean.setTemp(cart_uuid);
+        }
+        return resultBean;
     }
 
 

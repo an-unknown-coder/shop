@@ -33,6 +33,8 @@ public class ToPageController {
                 restTemplate.getForObject("http://cart-web/car/merge/" + cart_uuid + "/" + uid, ResultBean.class);
             }
         }
+
+
         return "index";
     }
 }

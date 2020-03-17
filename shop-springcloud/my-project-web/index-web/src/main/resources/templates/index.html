@@ -183,7 +183,7 @@
                         }
                     }
                 }
-            })
+            });
         </script>
 
         <!--小导航 -->
@@ -229,6 +229,29 @@
                 setInterval('autoScroll(".demo")', 3000);
             })
         }
+    </script>
+
+    <script type="text/javascript">
+        function addCart(product_id) {
+            $.ajax({
+                url:"index/add/"+product_id,
+                type: "get",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success:function (data) {
+                    console.log(data);
+                    if (data.errno===0){
+                        alert("添加成功！");
+                    }else {
+                        alert("添加失败！");
+                    }
+                },
+                error:function () {
+                    alert("添加失败！");
+                }
+            })
+        }
+
     </script>
 </div>
 <div class="shopMainbg">
@@ -331,23 +354,23 @@
         <div class="clear "></div>
 
 
-        <div id="f1">
-            <!--甜点-->
+        <!--商品列举-->
 
+        <div id="f1">
             <div class="am-container ">
                 <div class="shopTitle ">
-                    <h4>甜品</h4>
-                    <h3>每一道甜品都有一个故事</h3>
+                    <h4>服饰</h4>
+                    <h3>别样服饰，别样浪漫</h3>
                     <div class="today-brands ">
-                        <a href="# ">桂花糕</a>
-                        <a href="# ">奶皮酥</a>
-                        <a href="# ">栗子糕 </a>
-                        <a href="# ">马卡龙</a>
-                        <a href="# ">铜锣烧</a>
-                        <a href="# ">豌豆黄</a>
+                        <a href="# ">男装</a>
+                        <a href="# ">女装</a>
+                        <a href="# ">内衣 </a>
+                        <a href="# ">配饰</a>
+                        <a href="# ">童装</a>
+                        <a href="# ">童鞋</a>
                     </div>
                     <span class="more ">
-                    <a href="# ">更多美味<i class="am-icon-angle-right" style="padding-left:10px ;"></i></a>
+                    <a href="# ">更多风采<i class="am-icon-angle-right" style="padding-left:10px ;"></i></a>
                         </span>
                 </div>
             </div>
@@ -355,12 +378,12 @@
             <div class="am-g am-g-fixed floodFour">
                 <div class="am-u-sm-5 am-u-md-4 text-one list ">
                     <div class="word">
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
-                        <a class="outer" href="#"><span class="inner"><b class="text">核桃</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">男装</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">女装</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">内衣</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">配饰</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">童装</b></span></a>
+                        <a class="outer" href="#"><span class="inner"><b class="text">童鞋</b></span></a>
                     </div>
                     <a href="# ">
                         <div class="outer-con ">
@@ -368,7 +391,7 @@
                                 开抢啦！
                             </div>
                             <div class="sub-title ">
-                                零食大礼包
+                                服饰专场
                             </div>
                         </div>
                         <img src="images/act1.png "/>
@@ -376,12 +399,12 @@
                     <div class="triangle-topright"></div>
                 </div>
 
-                <div class="am-u-sm-7 am-u-md-4 text-two sug">
+                <div class="am-u-sm-7 am-u-md-4 text-two sug" id="item-1">
                     <div class="outer-con ">
-                        <div class="title ">
+                        <div class="title">
                             雪之恋和风大福
                         </div>
-                        <div class="sub-title ">
+                        <div class="sub-title">
                             ¥13.8
                         </div>
                         <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
@@ -389,7 +412,7 @@
                     <a href="# "><img src="images/2.jpg"/></a>
                 </div>
 
-                <div class="am-u-sm-7 am-u-md-4 text-two">
+                <div class="am-u-sm-7 am-u-md-4 text-two" id="item-2">
                     <div class="outer-con ">
                         <div class="title ">
                             雪之恋和风大福
@@ -403,7 +426,7 @@
                 </div>
 
 
-                <div class="am-u-sm-3 am-u-md-2 text-three big">
+                <div class="am-u-sm-3 am-u-md-2 text-three big" id="item-3">
                     <div class="outer-con ">
                         <div class="title ">
                             小优布丁
@@ -416,7 +439,7 @@
                     <a href="# "><img src="images/5.jpg"/></a>
                 </div>
 
-                <div class="am-u-sm-3 am-u-md-2 text-three sug">
+                <div class="am-u-sm-3 am-u-md-2 text-three sug" id="item-4">
                     <div class="outer-con ">
                         <div class="title ">
                             小优布丁
@@ -429,7 +452,7 @@
                     <a href="# "><img src="images/3.jpg"/></a>
                 </div>
 
-                <div class="am-u-sm-3 am-u-md-2 text-three ">
+                <div class="am-u-sm-3 am-u-md-2 text-three " id="item-5">
                     <div class="outer-con ">
                         <div class="title ">
                             小优布丁
@@ -442,7 +465,7 @@
                     <a href="# "><img src="images/4.jpg"/></a>
                 </div>
 
-                <div class="am-u-sm-3 am-u-md-2 text-three last big ">
+                <div class="am-u-sm-3 am-u-md-2 text-three last big " id="item-6">
                     <div class="outer-con ">
                         <div class="title ">
                             小优布丁
@@ -459,6 +482,24 @@
             <div class="clear "></div>
         </div>
 
+        <script type="text/javascript">
+            $.ajax({
+                url:"index/products",
+                type: "get",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success:function (data) {
+                    let products = data.products;
+                    for (let i = 0;i<6;i++){
+                        $("#item-"+(i+1)+" .title").text(products[i].pname);
+                        $("#item-"+(i+1)+" .sub-title").text("￥"+products[i].price);
+                        $("#item-"+(i+1)+" i").click(function () {
+                            addCart(products[i].pid);
+                        });
+                    }
+                }
+            })
+        </script>
 
         <div id="f2">
             <!--坚果-->
@@ -1823,15 +1864,9 @@
         </div>
     </div>
 </div>
-<!--ai-topsearch-start-->
-<!--<script>-->
-
-<!--</script>-->
-<!--ai-topsearch-end-->
 <script>
     window.jQuery || document.write('<script src="basic/js/jquery.min.js "><\/script>');
 </script>
 <script type="text/javascript " src="basic/js/quick_links.js "></script>
 </body>
-
 </html>

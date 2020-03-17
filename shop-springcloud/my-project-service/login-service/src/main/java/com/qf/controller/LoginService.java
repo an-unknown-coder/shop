@@ -3,6 +3,7 @@ package com.qf.controller;
 import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
+import com.qf.dto.SortAndProductsDTO;
 import com.qf.entity.TUser;
 import com.qf.entity.UserLoginInfo;
 import com.qf.mapper.UserMapper;

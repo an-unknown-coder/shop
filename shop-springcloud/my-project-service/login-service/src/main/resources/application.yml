@@ -15,3 +15,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+ribbon:
+  eager-load:
+    clients: cache-service
+    enabled: true
