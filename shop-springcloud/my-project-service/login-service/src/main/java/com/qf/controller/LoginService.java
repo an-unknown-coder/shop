@@ -3,6 +3,7 @@ package com.qf.controller;
 import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
+import com.qf.dto.SortAndProductsDTO;
 import com.qf.entity.TUser;
 import com.qf.entity.UserLoginInfo;
 import com.qf.mapper.UserMapper;
@@ -39,6 +40,7 @@ public class LoginService {
                 return ResultBean.error("您已注册，但还未激活!");
             }else{
                 ResultBean success = ResultBean.success("Successfully login!");
+                System.out.println(tUser);
                 success.setData(tUser);
                 return success;
             }

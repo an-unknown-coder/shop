@@ -32,4 +32,39 @@
         AND a.pid = '0'
     ORDER BY a.cid;
     </select>
+
+    <resultMap id="fuShiSortMap" type="com.qf.entity.Pro1">
+        <id property="id" column="p1_id" javaType="java.lang.Long"/>
+        <result property="name" column="p1_name" javaType="java.lang.String"/>
+        <collection property="pro2List" ofType="com.qf.entity.Pro2">
+            <id property="id" column="p2_id" javaType="java.lang.Long"/>
+            <result property="name" column="p2_name" javaType="java.lang.String"/>
+        </collection>
+    </resultMap>
+
+    <select id="queryFuShiSort" resultMap="fuShiSortMap">
+        SELECT p1.cname p1_name,
+        p1.cid p1_id,
+        p2.cname p2_name,
+        p2.cid p2_id
+        FROM t_product_type p1,
+        t_product_type p2
+        WHERE p1.cid=p2.pid AND p1.cid=15;
+    </select>
+
+<!--    <resultMap id="indexProductsMap" type="com.qf.entity.TProduct">-->
+<!--        <id property="pid" column="pid" javaType="java.lang.Long"/>-->
+<!--        <result property="pname" column="pname" javaType="java.lang.String"/>-->
+<!--        <result property="price" column="price" javaType="java.math.BigDecimal"/>-->
+<!--        <result property="pimage" column="pimage" javaType="java.lang.String"/>-->
+<!--    </resultMap>-->
+    <select id="queryIndexProducts" resultType="com.qf.entity.TProduct">
+        SELECT p.* FROM t_product p,
+        (SELECT t1.cid
+        FROM t_product_type t1,
+        t_product_type t2,
+        t_product_type t3
+        WHERE t1.pid=t2.cid AND t2.pid=t3.cid AND t3.cid=15) b
+        WHERE b.cid=p.type_id;
+    </select>
 </mapper>

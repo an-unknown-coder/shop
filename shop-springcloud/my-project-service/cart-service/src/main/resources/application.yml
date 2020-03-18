@@ -1,13 +1,11 @@
-
-
 spring:
   application:
     name: cart-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.129.97.123:3306/qf-v6?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
-    url: jdbc://mysql:139.129.97.123:3306/qf-v6?useUnicode=true&amp;characterEncoding=UTF-8
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: 139.129.97.123
@@ -23,8 +21,6 @@ server:
   port: 8764
 
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
   configuration:
-    # 驼峰映射
     use-actual-param-name: true
   type-aliases-package: com.qf.entity
