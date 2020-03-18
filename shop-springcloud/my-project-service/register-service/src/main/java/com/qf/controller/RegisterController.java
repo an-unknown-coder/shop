@@ -1,8 +1,10 @@
 package com.qf.controller;
 
+import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TUser;
 import com.qf.mapper.UserMapper;
+import com.qf.util.RedisUtil;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -65,7 +67,7 @@ public class RegisterController {
     @RequestMapping("activate/{uuid}")
     public String activate(@PathVariable String uuid) {
         try {
-            String username = restTemplate.getForObject("http://cache-service/redis/get/" + uuid, String.class);
+            String username = restTemplate.getForObject("http://cache-service/redis/get/" + RedisUtil.getRedisKey(RedisConstant.REGISTER_EMAIL,uuid) , String.class);
             if (username == null) {
                 return "激活时间已过，请重新注册！";
             }

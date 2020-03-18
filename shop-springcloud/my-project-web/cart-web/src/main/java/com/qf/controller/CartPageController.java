@@ -1,5 +1,6 @@
 package com.qf.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qf.constant.CookieConstant;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class CartPageController {
@@ -23,7 +26,6 @@ public class CartPageController {
     /**
      * 展示购物车
      */
-
     @RequestMapping("show")
     public String showCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
                             @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
@@ -36,7 +38,7 @@ public class CartPageController {
                 Long uid = loginInfo.getUser().getUid();
                 ResultBean result = restTemplate.getForObject("http://cart-service/cart/show/" + uid, ResultBean.class);
                 if (result != null) {
-                    List<TProductCartDTO> dtoList = (List<TProductCartDTO>) result.getData();
+                    List<TProductCartDTO> dtoList = transform(result);
                     model.addAttribute("productList", dtoList);
                     return "cart";
                 }
@@ -46,11 +48,22 @@ public class CartPageController {
         if (cart_uuid != null) {
             ResultBean resultBean = restTemplate.getForObject("http://cart-service/cart/show/" + cart_uuid, ResultBean.class);
             if (resultBean != null) {
-                List<TProductCartDTO> data = (List<TProductCartDTO>) resultBean.getData();
+                List<TProductCartDTO> data = transform(resultBean);
                 model.addAttribute("productList", data);
             }
         }
-
         return "cart";
+    }
+
+    private List<TProductCartDTO> transform(ResultBean resultBean){
+        List list = (List)resultBean.getData();
+        ArrayList<TProductCartDTO> arrayList = new ArrayList<>();
+        ObjectMapper objectMapper = new ObjectMapper();
+        for (Object o : list) {
+            TProductCartDTO tProductCartDTO = objectMapper.convertValue(o, TProductCartDTO.class);
+            arrayList.add(tProductCartDTO);
+        }
+        System.out.println(arrayList);
+        return arrayList;
     }
 }
