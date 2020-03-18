@@ -8,9 +8,13 @@
         <result column="pname" property="pname" jdbcType="VARCHAR"/>
         <result column="price" property="price" jdbcType="DECIMAL"/>
         <result column="pimage" property="pimage" jdbcType="VARCHAR"/>
+        <result column="type_id" property="typeId" jdbcType="BIGINT"/>
     </resultMap>
 
     <select id="selectAll" resultMap="BaseResultMap">
         select pid,pname,price,pimage from t_product
+    </select>
+    <select id="queryGoodsByTypeId" resultMap="BaseResultMap">
+        SELECT * FROM t_product WHERE type_id = #{typeId}
     </select>
 </mapper>

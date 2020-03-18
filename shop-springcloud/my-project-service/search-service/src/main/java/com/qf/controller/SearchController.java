@@ -22,4 +22,9 @@ public class SearchController {
         searchService.initDataToSolr();
         return "数据加载进solr库完成!";
     }
+
+    @RequestMapping("query")
+    public List<TProduct> queryGoodsByTypeId(Long typeId) {
+        return searchService.queryGoodsByTypeId(typeId);
+    }
 }

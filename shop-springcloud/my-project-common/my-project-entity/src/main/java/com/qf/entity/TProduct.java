@@ -8,15 +8,16 @@ public class TProduct implements Serializable {
     private String pname;
     private BigDecimal price;
     private String pimage;
-
+    private Long typeId;
     public TProduct() {
     }
 
-    public TProduct(Long pid, String pname, BigDecimal price, String pimage) {
+    public TProduct(Long pid, String pname, BigDecimal price, String pimage, Long typeId) {
         this.pid = pid;
         this.pname = pname;
         this.price = price;
         this.pimage = pimage;
+        this.typeId = typeId;
     }
 
     public Long getPid() {
@@ -49,5 +50,13 @@ public class TProduct implements Serializable {
 
     public void setPimage(String pimage) {
         this.pimage = pimage;
+    }
+
+    public Long getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(Long typeId) {
+        this.typeId = typeId;
     }
 }

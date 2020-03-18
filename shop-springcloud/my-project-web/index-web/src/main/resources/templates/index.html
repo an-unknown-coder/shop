@@ -177,7 +177,7 @@
                             $(dl).append("<dt><span title='" + pro2List[j].name + "'>" + pro2List[j].name + "</span></dt>");
                             let pro3List = pro2List[j].pro3List;
                             for (let k = 0; k < pro3List.length; k++) {
-                                $(dl).append("<dd><a title='" + pro3List[k].name + "' href=\"#\"><span>" + pro3List[k].name + "</span></a></dd>");
+                                $(dl).append("<dd><a title='" + pro3List[k].name + "' href='http://localhost:7767/product/query?typeId="+pro3List[k].id+"'><span>" + pro3List[k].name + "</span></a></dd>");
                             }
                             $div.append(dl);
                         }

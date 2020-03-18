@@ -7,4 +7,5 @@ import java.util.List;
 public interface ISearchService {
     void initDataToSolr();
     List<TProduct> searchProduct(String keywords);
+    List<TProduct> queryGoodsByTypeId(Long typeId);
 }

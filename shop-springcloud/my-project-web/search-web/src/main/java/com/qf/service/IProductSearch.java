@@ -14,4 +14,7 @@ public interface IProductSearch {
 
     @RequestMapping("product/initdata")
     void initDataToSolr();
+
+    @RequestMapping("product/query")
+    List<TProduct> queryGoodsByTypeId(@RequestParam Long typeId);
 }

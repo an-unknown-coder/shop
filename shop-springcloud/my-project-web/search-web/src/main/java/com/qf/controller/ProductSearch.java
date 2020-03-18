@@ -29,4 +29,11 @@ public class ProductSearch {
         productSearch.initDataToSolr();
         System.out.println("加载完成!");
     }
+
+    @RequestMapping("product/query")
+    public String queryGoodsByTypeId(@RequestParam Long typeId,Model model) {
+        List<TProduct> tProducts = productSearch.queryGoodsByTypeId(typeId);
+        model.addAttribute("tProducts",tProducts);
+        return "search";
+    }
 }

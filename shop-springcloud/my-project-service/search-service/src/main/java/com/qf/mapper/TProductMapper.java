@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface TProductMapper {
     List<TProduct> selectAll();
+    List<TProduct> queryGoodsByTypeId(Long typeId);
 }

@@ -102,4 +102,10 @@ public class SearchService implements ISearchService {
         return products;
     }
 
+    @Override
+    public List<TProduct> queryGoodsByTypeId(Long typeId) {
+        List<TProduct> tProducts = tProductMapper.queryGoodsByTypeId(typeId);
+        return tProducts;
+    }
+
 }
