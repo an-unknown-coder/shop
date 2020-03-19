@@ -18,4 +18,10 @@ public class TProduct implements Serializable {
     private BigDecimal price;
     private String pimage;
     private Long typeId;
+    private BigDecimal sale_price;
+    private Integer monthly_sales;
+    private Integer cumulative_sales;
+    private Integer cumulative_evaluate;
+
+
 }
