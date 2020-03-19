@@ -20,7 +20,6 @@ public class ProductSearch {
     public String searchProduct(@RequestParam String keywords ,Model model) {
         List<TProduct> tProducts = productSearch.searchProduct(keywords);
         model.addAttribute("tProducts",tProducts);
-        System.out.println(tProducts);
         return "search";
     }
 

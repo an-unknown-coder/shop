@@ -63,7 +63,6 @@ public class CartPageController {
             TProductCartDTO tProductCartDTO = objectMapper.convertValue(o, TProductCartDTO.class);
             arrayList.add(tProductCartDTO);
         }
-        System.out.println(arrayList);
         return arrayList;
     }
 }

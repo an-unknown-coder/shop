@@ -17,3 +17,4 @@ cache-service: 8765
 email-service: 8766
 search-service: 8767        search-web: 7767
 login-service: 8768         login-web: 7768
+                            product-web: 8001

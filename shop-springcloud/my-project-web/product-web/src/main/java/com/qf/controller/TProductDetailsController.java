@@ -8,10 +8,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.annotation.Resource;
+
 @Controller
 public class TProductDetailsController {
 
-    @Autowired
+    @Resource
     private TProductDetailsMapper tProductDetailsMapper;
 
     @GetMapping("/detail/{pid}")
@@ -20,8 +22,6 @@ public class TProductDetailsController {
         TProduct product = tProductDetailsMapper.selectByPrimaryKey(pid);
 
         model.addAttribute("product",product);
-        System.out.println(product);
-
         return "introduction";
 
 

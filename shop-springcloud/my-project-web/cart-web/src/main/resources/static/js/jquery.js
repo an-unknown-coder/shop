@@ -5,7 +5,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 
 
  $(document).ready(function(){
-
      $(function(){
          $(".add").click(function(){
           var t=$(this).parent().find('input[class*=text_box]');
@@ -14,14 +13,14 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
       $(".min").click(function(){
        var t=$(this).parent().find('input[class*=text_box]');
          t.val(parseInt(t.val())-1)
-         if(parseInt(t.val())<0){
-          t.val(0);
+         if(parseInt(t.val())<1){
+          t.val(1);
           }
        })
     }) 
 
-	
-	<!--兼容IE浏览器 -->
+	//
+	// <!--兼容IE浏览器 -->
 	    if (!document.getElementsByClassName) {
         document.getElementsByClassName = function (cls) {
             var ret = [];

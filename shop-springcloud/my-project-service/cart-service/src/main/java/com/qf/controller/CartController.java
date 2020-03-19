@@ -106,7 +106,7 @@ public class CartController {
     /**
      * 更新购物车
      */
-    @RequestMapping("update{id}/{productId}/{count}")
+    @RequestMapping("update/{id}/{productId}/{count}")
     public ResultBean updateCart(@PathVariable String id,
                                  @PathVariable Long productId,
                                  @PathVariable int count) {
@@ -114,7 +114,6 @@ public class CartController {
         String redisKey = RedisUtil.getRedisKey(RedisConstant.USER_CART_PRE, id);
 
         Object o = redisTemplate.opsForValue().get(redisKey);
-
         if (o != null) {
             //有购物车
             List<CartItem> carts = (List<CartItem>) o;
@@ -122,12 +121,13 @@ public class CartController {
             for (CartItem cart : carts) {
 
                 if (cart.getProductId().longValue() == productId.longValue()) {
-                    cart.setCount(count);
-                    cart.setUpdateTime(new Date());
-
+                    if (count<1){
+                        carts.remove(cart);
+                    }else {
+                        cart.setCount(count);
+                    }
                     // 在存入redis 中
-
-                    redisTemplate.opsForValue().set(redisKey, cart);
+                    redisTemplate.opsForValue().set(redisKey, carts);
                     return ResultBean.success(carts, "更新购物车成功");
                 }
             }
@@ -142,7 +142,6 @@ public class CartController {
             //有购物车
             String redisKey = RedisUtil.getRedisKey(RedisConstant.USER_CART_PRE, uuid);
             Object o = redisTemplate.opsForValue().get(redisKey);
-
             if (o != null) {
                 List<CartItem> carts = (List<CartItem>) o;
                 List<TProductCartDTO> productCartDTOS = new ArrayList<>();
@@ -167,7 +166,7 @@ public class CartController {
                     productCartDTOS.add(tProductCartDTO);
                 }
                 // 添加订单排序
-                productCartDTOS.sort((o1, o2) -> (int) (o1.getUpdateTime().getTime() - o2.getUpdateTime().getTime()));
+                productCartDTOS.sort((o1, o2) -> (int) (o2.getUpdateTime().getTime() - o1.getUpdateTime().getTime()));
                 return ResultBean.success(productCartDTOS);
             }
 
