@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: order-web-ribbon
+
+server:
+  port: 7562
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
