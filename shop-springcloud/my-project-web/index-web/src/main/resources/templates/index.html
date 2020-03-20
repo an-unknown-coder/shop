@@ -1714,9 +1714,13 @@
                 <div class="ibar_login_box status_login ">
                     <div class="avatar_box ">
                         <p class="avatar_imgbox "><img src="images/no-img_mid_.jpg "/></p>
-                        <ul class="user_info ">
-                            <li>用户名sl1903</li>
-                            <li>级&nbsp;别普通会员</li>
+                        <ul class="user_info " th:if="${loginInfo.isLogin}">
+<!--                            <li>用户名:<span th:text="${loginInfo.user.username}"></span></li>-->
+                            <li>级&nbsp;别:普通会员</li>
+                        </ul>
+                        <ul class="user_info " th:unless="${loginInfo.isLogin}">
+                            <li>普通游客</li>
+                            <li><a href="http://localhost:7768/toLogin">登录获取更多权限</a></li>
                         </ul>
                     </div>
                     <div class="login_btnbox ">
@@ -1727,8 +1731,8 @@
                 </div>
 
             </div>
-            <div id="shopCart " class="item ">
-                <a href="# ">
+            <div id="shopCart " class="item" onclick="to_cart()">
+                <a>
                     <span class="message "></span>
                 </a>
                 <p>
@@ -1736,6 +1740,13 @@
                 </p>
                 <p class="cart_num ">0</p>
             </div>
+
+            <script type="text/javascript">
+                function to_cart() {
+                    window.location.href = "http://localhost:7764/show";
+                }
+            </script>
+
             <div id="asset " class="item ">
                 <a href="# ">
                     <span class="view "></span>

@@ -102,14 +102,14 @@
                         </li>
                         <li class="td td-item">
                             <div class="item-pic">
-                                <a th:href="${'#'}" target="_blank" class="J_MakePoint" data-point="tbcart.8.12">
+                                <a th:href="${'http://localhost:8001/detail/'+cart.getProduct().getPid()}" target="_blank" class="J_MakePoint" data-point="tbcart.8.12">
                                     <img alt="图片加载中" th:src="${cart.getProduct().getPimage()}"
                                          class="itempic J_ItemImg"/>
                                 </a>
                             </div>
                             <div class="item-info">
                                 <div class="item-basic-info">
-                                    <a th:href="${'#'}" target="_blank"
+                                    <a th:href="${'http://localhost:8001/detail/'+cart.getProduct().getPid()}" target="_blank"
                                        th:text="${cart.getProduct().getPname()}"
                                        class="item-title J_MakePoint" data-point="tbcart.8.11"></a>
                                 </div>

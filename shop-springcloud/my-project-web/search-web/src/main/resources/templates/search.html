@@ -238,15 +238,21 @@
                             </div>
 
                         </div>
-                        <div id="shopCart" class="item">
-                            <a href="#">
-                                <span class="message"></span>
+                        <div id="shopCart " class="item" onclick="to_cart()">
+                            <a>
+                                <span class="message "></span>
                             </a>
                             <p>
                                 购物车
                             </p>
-                            <p class="cart_num">0</p>
+                            <p class="cart_num ">0</p>
                         </div>
+
+                        <script type="text/javascript">
+                            function to_cart() {
+                                window.location.href = "http://localhost:7764/show";
+                            }
+                        </script>
                         <div id="asset" class="item">
                             <a href="#">
                                 <span class="view"></span>
