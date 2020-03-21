@@ -35,7 +35,7 @@ public class IndexController {
 
     @GetMapping("add/{product_id}")
     public ResultBean addOne(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
-                             @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+                             @CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                              @PathVariable Long product_id,
                              HttpServletResponse response
     ) {

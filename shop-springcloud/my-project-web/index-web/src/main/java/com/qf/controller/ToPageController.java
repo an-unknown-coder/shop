@@ -19,7 +19,7 @@ public class ToPageController {
     private RestTemplate restTemplate;
 
     @RequestMapping("toIndex")
-    public String toIndex(@CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+    public String toIndex(@CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                           @CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
                           Model model) {
         UserLoginInfo loginInfo = restTemplate.getForObject("http://login-service/checkLogin/" + login_uuid, UserLoginInfo.class);

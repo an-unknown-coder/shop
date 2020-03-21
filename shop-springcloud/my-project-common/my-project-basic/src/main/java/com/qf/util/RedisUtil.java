@@ -2,7 +2,6 @@ package com.qf.util;
 
 
 public class RedisUtil {
-
     /**
      * 封装Redis键
      */

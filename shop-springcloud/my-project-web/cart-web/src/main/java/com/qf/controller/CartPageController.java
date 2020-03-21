@@ -28,7 +28,7 @@ public class CartPageController {
      */
     @RequestMapping("show")
     public String showCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
-                            @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+                            @CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                             Model model) {
         if (login_uuid != null) {
             UserLoginInfo loginInfo = restTemplate.getForObject("http://login-service/checkLogin/" + login_uuid, UserLoginInfo.class);
@@ -57,6 +57,9 @@ public class CartPageController {
 
     private List<TProductCartDTO> transform(ResultBean resultBean){
         List list = (List)resultBean.getData();
+        if (list==null){
+            return null;
+        }
         ArrayList<TProductCartDTO> arrayList = new ArrayList<>();
         ObjectMapper objectMapper = new ObjectMapper();
         for (Object o : list) {

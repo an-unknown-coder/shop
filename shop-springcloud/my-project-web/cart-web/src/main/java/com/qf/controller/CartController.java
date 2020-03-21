@@ -25,7 +25,7 @@ public class CartController {
     @CrossOrigin
     @RequestMapping("add/{productId}/{count}")
     public ResultBean addCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
-                               @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+                               @CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                                @PathVariable Long productId,
                                @PathVariable int count,
                                HttpServletResponse response
@@ -56,7 +56,7 @@ public class CartController {
 
     @RequestMapping("clean")
     public ResultBean cleanCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
-                                 @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+                                 @CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                                  HttpServletResponse response
     ) {
         if (login_uuid != null) {
@@ -87,7 +87,7 @@ public class CartController {
      */
     @RequestMapping("update/{productId}/{count}")
     public ResultBean updateCarts(@CookieValue(value = CookieConstant.USER_CART_UUID, required = false) String cart_uuid,
-                                  @CookieValue(value = RedisConstant.USER_LOGIN_UUID, required = false) String login_uuid,
+                                  @CookieValue(value = CookieConstant.USER_LOGIN_UUID, required = false) String login_uuid,
                                   @PathVariable Long productId,
                                   @PathVariable int count
     ) {

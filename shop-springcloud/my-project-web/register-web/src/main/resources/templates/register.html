@@ -19,7 +19,7 @@
 <body>
 
 <div class="login-boxtitle">
-    <a href="home/demo.html"><img alt="" src="images/logobig.png"/></a>
+    <a href="http://localhost:7768/toLogin"><img alt="" src="images/logobig.png"/></a>
 </div>
 
 <div class="res-banner">
@@ -41,7 +41,7 @@
                             </div>
                             <div class="user-pass">
                                 <label for="password-email"><i class="am-icon-lock"></i></label>
-                               <input type="password" id="password-email" placeholder="设置密码">
+                                <input type="password" id="password-email" placeholder="设置密码">
                             </div>
                             <div class="user-pass">
                                 <label for="passwordRepeat-email"><i class="am-icon-lock"></i></label>
@@ -52,11 +52,13 @@
 
                         <div class="login-links">
                             <label for="reader-me-email">
-                                <input id="reader-me-email" type="checkbox"> 我同意商城《<a href="https://in.m.jd.com/help/app/register_info.html">服务协议</a>》
+                                <input id="reader-me-email" type="checkbox"> 我同意商城《<a
+                                    href="https://in.m.jd.com/help/app/register_info.html">服务协议</a>》
                             </label>
                         </div>
                         <div class="am-cf">
-                            <input type="button" value="注册" id="register-email" onclick="register_email()" class="am-btn am-btn-primary am-btn-sm am-fl">
+                            <input type="button" value="注册" id="register-email" onclick="register_email()"
+                                   class="am-btn am-btn-primary am-btn-sm am-fl">
                         </div>
 
                     </div>
@@ -70,26 +72,28 @@
                             <div class="verification">
                                 <label for="code"><i class="am-icon-code-fork"></i></label>
                                 <input type="tel" name="" id="code" placeholder="请输入验证码">
-                                <a class="btn" href="javascript:void(0);" onClick="sendMobileCode();"
-                                   id="sendMobileCode">
-                                    <span id="dyMobileButton">获取</span></a>
+                                <a class="btn">
+                                    <span id="dyMobileButton">获取</span>
+                                </a>
                             </div>
                             <div class="user-pass">
                                 <label for="password-tel"><i class="am-icon-lock"></i></label>
-                                <input type="password" name="" id="password-tel" placeholder="设置密码">
+                                <input type="password" id="password-tel" placeholder="设置密码">
                             </div>
                             <div class="user-pass">
                                 <label for="passwordRepeat-tel"><i class="am-icon-lock"></i></label>
-                                <input type="password" name="" id="passwordRepeat-tel" placeholder="确认密码">
+                                <input type="password" id="passwordRepeat-tel" placeholder="确认密码">
                             </div>
                         </form>
                         <div class="login-links">
                             <label for="reader-me-tel">
-                                <input id="reader-me-tel" type="checkbox"> 我同意商城《<a href="https://in.m.jd.com/help/app/register_info.html">服务协议</a>》
+                                <input id="reader-me-tel" type="checkbox"> 我同意商城《<a
+                                    href="https://in.m.jd.com/help/app/register_info.html">服务协议</a>》
                             </label>
                         </div>
                         <div class="am-cf">
-                            <input type="button" value="注册" onclick="register_tel()" class="am-btn am-btn-primary am-btn-sm am-fl">
+                            <input type="button" value="注册" id="register-tel" onclick="register_tel()"
+                                   class="am-btn am-btn-primary am-btn-sm am-fl">
                         </div>
                         <hr>
                     </div>
@@ -103,56 +107,141 @@
                         function register_email() {
                             let addr = $("#email").val();
                             var pattern_email = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-                            if (!pattern_email.test(addr)){
-                               alert("邮箱格式不正确！") ;
-                               return;
+                            if (!pattern_email.test(addr)) {
+                                alert("邮箱格式不正确！");
+                                return;
                             }
                             var pattern_psd = /^\S{6,12}$/;
                             let password = $("#password-email").val();
-                            if (!pattern_psd.test(password)){
+                            if (!pattern_psd.test(password)) {
                                 alert("密码必须为6-12位非空字符");
                                 return;
                             }
-                            if (password!==$("#passwordRepeat-email").val()){
+                            if (password !== $("#passwordRepeat-email").val()) {
                                 alert("密码不一致!请重设密码！");
                                 return;
                             }
-                            if (!$("#reader-me-email").is(":checked")){
+                            if (!$("#reader-me-email").is(":checked")) {
                                 alert("您需要同意商城协议才能注册！");
                                 return;
                             }
                             $.ajax({
-                                url:"register/email",
-                                type:"post",
-                                data:{addr:addr,password:password},
-                                dataType:"json",
-                                beforeSend:function(xml){
+                                url: "register/email",
+                                type: "post",
+                                data: {addr: addr, password: password},
+                                dataType: "json",
+                                beforeSend: function (xml) {
                                     let $register = $("#register-email");
                                     $register.val("注册中...");
-                                    $register.attr("style","background:gray");
-                                    $register.attr("onclick","");
+                                    $register.attr("style", "background:gray");
+                                    $register.attr("onclick", "");
                                 },
-                                success:function (data) {
+                                success: function (data) {
                                     alert(data.message);
-                                    if (data.errno===0){
-                                        window.location.href="";
-                                    }else {
+                                    if (data.errno === 0) {
+                                        alert(data.message);
+                                        window.location.href = "http://localhost:7768/toLogin";
+                                    } else {
                                         window.location.reload();
                                     }
                                 },
-                                error:function () {
+                                error: function () {
                                     alert("服务器开了小差！请稍后再试~");
                                     window.location.reload();
                                 }
                             });
                         }
-                        function register_tel() {
 
+                        function register_tel() {
+                            let phone = $("#phone").val();
+                            var pattern_tel = /^1[3456789]\d{9}$/;
+                            if (!pattern_tel.test(phone)) {
+                                alert("手机号格式不正确！");
+                                return;
+                            }
+                            var pattern_code = /^[0-9]{4}$/;
+                            let code = $("#code").val();
+                            if (!pattern_code.test(code)) {
+                                alert("验证码错误！");
+                                return;
+                            }
+                            var pattern_psd = /^\S{6,12}$/;
+                            let password = $("#password-tel").val();
+                            if (!pattern_psd.test(password)) {
+                                alert("密码必须为6-12位非空字符");
+                                return;
+                            }
+                            if (password !== $("#passwordRepeat-tel").val()) {
+                                alert("密码不一致!请重设密码！");
+                                return;
+                            }
+                            if (!$("#reader-me-tel").is(":checked")) {
+                                alert("您需要同意商城协议才能注册！");
+                                return;
+                            }
+                            $.ajax({
+                                url: "register/msg",
+                                type: "post",
+                                data: {phone: phone, password: password, code: code},
+                                dataType: "json",
+                                beforeSend: function (xml) {
+                                    let $register = $("#register-tel");
+                                    $register.val("注册中...");
+                                    $register.attr("style", "background:gray");
+                                    $register.attr("onclick", "");
+                                },
+                                success: function (data) {
+                                    alert(data.message);
+                                    if (data.errno === 0) {
+                                        window.location.href = "http://localhost:7768/toLogin";
+                                    } else {
+                                        window.location.reload();
+                                    }
+                                },
+                                error: function () {
+                                    alert("服务器开了小差！请稍后再试~");
+                                    window.location.reload();
+                                }
+                            });
+                        }
+
+                        var send = document.getElementById("dyMobileButton");
+                        send.addEventListener("click", make_code, false);
+                        var interval;
+
+                        function make_code() {
+                            let phone = $("#phone").val();
+                            var pattern_tel = /^1[3456789]\d{9}$/;
+                            if (!pattern_tel.test(phone)) {
+                                alert("手机号格式不正确！");
+                                return;
+                            }
+                            send.removeEventListener("click", make_code, false);
+                            var time = 60;
+                            $(send).text(time);
+                            interval = window.setInterval(function () {
+                                time--;
+                                $(send).text(time);
+                                if (time === 0) {
+                                    window.clearInterval(interval);
+                                    $(send).text("获取");
+                                    send.addEventListener("click", make_code, false);
+                                }
+                            }, 1000);
+                            $.ajax({
+                                url: "register/send/"+phone,
+                                success:function (data) {
+                                    console.log(data.errno);
+                                },
+                                error:function () {
+                                    console.log("error");
+                                }
+                            });
                         }
                     </script>
                 </div>
             </div>
-            <span style="font-size: smaller;margin-left: 5px;">已有账号？去<a href="" >登陆</a></span>
+            <span style="font-size: smaller;margin-left: 5px;">已有账号？去<a href="http://localhost:7768/toLogin">登陆</a></span>
         </div>
     </div>
 

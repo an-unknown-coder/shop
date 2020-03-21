@@ -3,12 +3,10 @@ package com.qf.controller;
 import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
-import com.qf.dto.SortAndProductsDTO;
 import com.qf.entity.TUser;
 import com.qf.entity.UserLoginInfo;
 import com.qf.mapper.UserMapper;
 import com.qf.util.RedisUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,29 +26,29 @@ public class LoginService {
     private RestTemplate restTemplate;
 
     @RequestMapping("login/{username}/{password}")
-    public ResultBean login(@PathVariable String username,@PathVariable String password){
+    public ResultBean login(@PathVariable String username, @PathVariable String password) {
         String psd = DigestUtils.md5DigestAsHex(password.getBytes());
         TUser user = new TUser();
         user.setUsername(username);
         user.setPassword(psd);
         List<TUser> users = userMapper.select(user);
-        if (users!=null&&users.size()==1){
+        if (users != null && users.size() == 1) {
             TUser tUser = users.get(0);
-            if (tUser.getFlag()==0){
+            if (tUser.getFlag() == 0) {
                 return ResultBean.error("您已注册，但还未激活!");
-            }else{
+            } else {
                 ResultBean success = ResultBean.success("Successfully login!");
                 System.out.println(tUser);
                 success.setData(tUser);
                 return success;
             }
-        }else {
+        } else {
             return ResultBean.error("用户名或密码错误!");
         }
     }
 
     @RequestMapping("checkLogin/{uuid}")
-    public UserLoginInfo checkLogin(@PathVariable String uuid){
+    public UserLoginInfo checkLogin(@PathVariable String uuid) {
         UserLoginInfo loginInfo = new UserLoginInfo();
         if (uuid == null) {
             loginInfo.setIsLogin(false);

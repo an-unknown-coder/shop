@@ -51,6 +51,12 @@ public class RegisterController {
     public ResultBean registerByTel(@PathVariable String phone, @PathVariable String password) {
         TUser user = new TUser();
         user.setUsername(phone);
+        System.out.println(phone);
+        int count = userMapper.selectCount(user);
+        System.out.println(count);
+        if (count>0){
+            return ResultBean.error("该手机号已经注册过");
+        }
         user.setPassword(DigestUtils.md5DigestAsHex(password.getBytes()));
         user.setPhone(phone);
         user.setFlag(1);
@@ -60,7 +66,7 @@ public class RegisterController {
         if (insert == 1) {
             return ResultBean.success("注册成功！欢迎登录！");
         } else {
-            return ResultBean.error("注册失败！");
+            return ResultBean.error("服务器异常！请稍后再试");
         }
     }
 
